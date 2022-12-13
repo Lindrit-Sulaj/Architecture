@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Missing } from './components'
+import { Navbar, Missing, Footer } from './components'
 import { Landing } from './pages'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Route exact path="/" element={<Landing />}></Route>
         <Route exact path="*" element={<Missing />}></Route>
       </Routes>
+      <Footer />
     </>
   )
 }
