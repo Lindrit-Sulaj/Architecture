@@ -3,8 +3,8 @@ import { useEffect, useMemo, useState } from "react"
 const screenBreakpoints = {
   mobile: 0,
   tablet: 700,
-  laptop: 1280,
-  desktop: 1536
+  laptop: 1100,
+  desktop: 1420
 }
 
 export const useMediaQuery = () => {

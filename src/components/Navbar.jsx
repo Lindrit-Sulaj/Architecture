@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav>
       <h1 className="logo">Logo</h1>
 
-      <p>{breakpoint}</p>
+      <p className='font-bold tablet:text-red-600 laptop:text-blue-400 desktop:text-green-500'>{breakpoint}</p>
     </nav>
   )
 }
