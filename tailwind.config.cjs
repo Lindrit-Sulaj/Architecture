@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     fontFamily: {
       'inter-tight': ['Inter Tight', 'sans-serif'],
-      'noto-sans': ['Noto Sans', 'sans-serif']
+      'noto-sans': ['Noto Sans', 'sans-serif'],
+      'playfair': ['Playfair Display', 'sans-serif']
+    },
+    maxWidth: {
+      'mw-normal': '1400px',
+      'mx-large': '1500px'
     },
     colors: {
       'blue': {
