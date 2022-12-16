@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className='text-white bg-blue-900 fixed top-0 w-full'>
       <nav className={`flex container justify-between mx-auto h-[70px] items-center  font-inter-tight`}>
-        <h1 className="logo ml-3 font-semibold text-[22px] border-solid border-b-2 border-yellow font-inter-tight laptop:text-2xl">Design</h1>
+        <h1 className="logo ml-3 font-semibold text-[22px] border-solid border-b-2 border-yellow-500 font-inter-tight laptop:text-2xl">Design</h1>
 
         <ul className={`${breakpoint !== 'mobile' ? styles.desktop : (breakpoint === 'mobile' && navOpened) ? styles.mobileOpened : (breakpoint === 'mobile' && !navOpened) ? `slide-left hidden` : 'hidden'}`}>
           <li className='nav-link'>

@@ -6,10 +6,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route exact path="/" element={<Landing />}></Route>
-        <Route exact path="*" element={<Missing />}></Route>
-      </Routes>
+      <div className="pt-[70px]">
+        <Routes>
+          <Route exact path="/" element={<Landing />}></Route>
+          <Route exact path="*" element={<Missing />}></Route>
+        </Routes>
+      </div>
       <Footer />
     </>
   )

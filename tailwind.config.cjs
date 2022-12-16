@@ -32,7 +32,12 @@ module.exports = {
         200: '#EDEDED',
         100: '#FFFFFF'
       },
-      'yellow': '#FCA311',
+      'yellow': {
+        900: '#F0DC00',
+        500: '#FFEE32',
+        300: '#FFF25F',
+        100: '#FFFDE2'
+      },
       'light-gray': '#E5E5E5',
       'white': '#FFF'
     },
