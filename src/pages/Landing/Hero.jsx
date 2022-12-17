@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../assets/landing.scss'
 import { Button } from '../../components/'
 
 const Hero = () => {
