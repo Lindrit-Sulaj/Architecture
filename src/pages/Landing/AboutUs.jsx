@@ -8,11 +8,11 @@ const AboutUs = () => {
   const [screenWidth, breakpoint] = useMediaQuery();
 
   return (
-    <section className="About-Us max-w-mw-normal mx-auto my-10 flex flex-wrap-reverse justify-center items-center">
+    <section className="About-Us max-w-mw-normal mx-auto my-20 laptop:my-10 flex flex-wrap-reverse justify-center items-center">
       {breakpoint !== 'mobile' ? (
         <img className='w-3/4 block mx-auto laptop:w-1/2' src="https://ik.imagekit.io/0s9lwb2yr/Architecture/Landing-About-Image-1_76KWRkBJK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671285247443" alt="" />
       ) : (
-        <h1>Image goes here</h1>
+        <img className='w-3/4 block mx-auto laptop:w-1/2' src="https://ik.imagekit.io/0s9lwb2yr/Architecture/tr:w-500/Landing-About-Image-1_76KWRkBJK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1671285247443" alt="" />
       )
       }
       <div className='w-full px-4 laptop:w-1/2'>
