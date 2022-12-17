@@ -1,6 +1,11 @@
 .hero-bg {
-  background: linear-gradient(to right, rgba(31, 30, 30, 0.733), rgba(20, 20, 20, 0.233)), url('./images/landing-hero-image.jpg');
+  background: url('./images/landing-hero-mobile.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: 700px) {
+    background-image: url('./images/landing-hero-image.jpg');
+  }
+  
 }
