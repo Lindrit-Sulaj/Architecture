@@ -46,7 +46,7 @@ const Services = () => {
 
 const Service = ({ icon, title, desc }) => {
   return (
-    <div className='bg-blue-750 border-solid border-[1px] border-blue-700 rounded-md px-8 py-12 w-full tablet:w-[49%] laptop:25%'>
+    <div className='bg-blue-750 border-solid border-[1px] border-blue-700 rounded-md px-8 py-12 w-full tablet:w-[48%] laptop:25%'>
       <span className='material-symbols-outlined text-yellow-100 text-6xl'>{icon}</span>
       <h1 className='text-neutral-100 text-2xl font-semibold font-inter-tight tracking-wide mt-4'>{title}</h1>
       <p className='text-neutral-200 text-[17px] opacity-80 mt-4 leading-7'>{desc}</p>

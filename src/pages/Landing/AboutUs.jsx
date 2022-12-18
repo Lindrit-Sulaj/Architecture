@@ -19,7 +19,7 @@ const AboutUs = () => {
         <p className='text-left text-yellow-900 font-inter-tight uppercase font-bold tablet:text-center laptop:text-left'>About Us</p>
         <h1 className='text-left text-4xl font-playfair font-bold mt-2 mb-8 tablet:text-center tablet:max-w-[700px] tablet:mx-auto laptop:text-left laptop:mx-0 laptop:text-[40px]'>We specialize in interior and exterior design</h1>
         <p className='text-left mt-2 text-neutral-400 text-lg max-w-[580px] tablet:text-center tablet:mx-auto laptop:mx-0 laptop:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui impedit blanditiis exercitationem modi illum assumenda eum ea esse saep.</p>
-        <div className='flex items-stretch justify-start tablet:justify-center my-10 laptop:justify-start'>
+        <div className='flex items-stretch justify-start tablet:justify-center my-10 laptop:justify-start flex-wrap tablet:flex-nowrap gap-y-4'>
           <InformationBox
             iconName='support_agent'
             title='Free Consultation'
