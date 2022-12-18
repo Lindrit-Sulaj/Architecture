@@ -15,7 +15,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='text-white bg-blue-900 fixed top-0 w-full'>
+    <div className='text-white bg-blue-900 fixed top-0 z-50 w-full'>
       <nav className={`flex container justify-between mx-auto h-[70px] items-center font-inter-tight`}>
         <h1 className="logo ml-3 font-semibold text-[22px] border-solid border-b-2 border-yellow-500 font-playfair laptop:text-2xl">Design</h1>
 
