@@ -2,9 +2,7 @@ import React, { useContext, createContext, useState, useEffect } from 'react'
 
 const TabContext = createContext();
 
-const Tabs = ({ defaultValue, children }) => {
-  const [selectedTab, setSelectedTab] = useState(defaultValue || '');
-
+const Tabs = ({ selectedTab, setSelectedTab, children }) => {
   const value = {
     selectedTab,
     setSelectedTab
@@ -32,7 +30,7 @@ const Button = ({ label, className, children }) => {
   };
 
   return (
-    <button className={`${selectedTab === label ? 'bg-blue-400' : ''} ${className}`} onClick={handleClick}>{children}</button>
+    <button className={`transition-all text-neutral-100 font-medium py-1 px-2 rounded-md font-inter-tight tracking-wider ${selectedTab === label ? 'bg-blue-500 px-5' : ''} ${className}`} onClick={handleClick}>{children}</button>
   )
 }
 
