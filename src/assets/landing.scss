@@ -12,3 +12,26 @@
     background-image: url('./images/landing-hero-image.jpg');
   }
 }
+
+/* width */
+.tab-buttons::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+.tab-buttons::-webkit-scrollbar-track {
+  width: 0;
+  background: #f1f1f1;
+}
+
+/* Handle */
+.tab-buttons::-webkit-scrollbar-thumb {
+  width: 0;
+  background: #888;
+}
+
+/* Handle on hover */
+.tab-buttons::-webkit-scrollbar-thumb:hover {
+  width: 0;
+  background: #555;
+}

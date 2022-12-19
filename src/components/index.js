@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Button from "./Button";
 import Dropdown from "./Dropdown";
 import InformationBox from "./InformationBox";
+import Tabs from "./Tabs";
 
 export {
   Missing,
@@ -11,5 +12,6 @@ export {
   Footer,
   Button,
   Dropdown,
-  InformationBox
+  InformationBox,
+  Tabs
 }
