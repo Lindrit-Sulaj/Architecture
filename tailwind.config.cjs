@@ -36,6 +36,7 @@ module.exports = {
         400: '#5B5B5B',
         300: '#6D6D6D',
         200: '#EDEDED',
+        150: 'rgb(250, 250, 250)',
         100: '#FFFFFF'
       },
       'yellow': {

@@ -2,41 +2,37 @@ import React from 'react'
 import { Tabs } from '../../components'
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
-import { landingProjects } from '../../assets/constants';
 
 const Projects = () => {
-  const [selectedTab, setSelectedTab] = useState('interior_design');
-
   return (
-    <div className='bg-blue-800 py-16 px-5 desktop:px-0
+    <div className='bg-neutral-150 py-16 px-5 desktop:px-0
     '>
       <section className="project max-w-mx-large mx-auto">
-        <Tabs selectedTab={selectedTab} setSelectedTab={setSelectedTab}>
-          <div className='flex flex-wrap gap-y-9 items-center flex-col'>
-            <div className='w-full'>
-              <p className='text-yellow-300 font-bold uppercase text-center font-inter-tight tracking-wider'>Projects</p>
-              <h1 className='text-5xl font-playfair font-
-              bold text-neutral-100 mt-2 text-center'>Our Latest Projects</h1>
-            </div>
-            <div className="flex justify-start items-center gap-3  tablet:gap-7 w-full overflow-auto tab-buttons tablet:flex-wrap tablet:justify-center">
-              <Tabs.Button className='whitespace-nowrap' label='interior_design'>Interior Design</Tabs.Button>
-              <Tabs.Button className='whitespace-nowrap text-neutral-100 font-inter-tight tracking-wider' label="exterior_design">Exterior Design</Tabs.Button>
-              <Tabs.Button className='whitespace-nowrap' label="furniture_&_decor">Furniture & Decor</Tabs.Button>
-              <Tabs.Button className='whitespace-nowrap' label="3d_visualization">3D Visualization</Tabs.Button>
-              <Link to="/projects" className='whitespace-nowrap font-inter-tight tracking-wider text-neutral-200 underline underline-offset-4'>
-                View all projects
-              </Link>
-            </div>
-          </div>
-
-          <div>
-            {
-              landingProjects[selectedTab].map((project, index) => (
-                <Project {...project} key={index}/>
-              ))
-            }
-          </div>
-        </Tabs>
+        <p className='font-inter-tight tracking-wider uppercase font-bold text-yellow-900 text-center'>Projects</p>
+        <h1 className='text-center my-3 text-4xl font-bold font-playfair'>View our latest projects</h1>
+        <div className='flex flex-wrap justify-center laptop:flex-nowrap gap-4 mt-16'>
+          <Project
+            title="Modern House"
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed minus quis nisi adipisci, officia.'
+            image="https://images.pexels.com/photos/3049121/pexels-photo-3049121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <Project
+            title="Living Complex"
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed minus quis nisi adipisci, officia.'
+            image="https://images.pexels.com/photos/7245369/pexels-photo-7245369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <Project
+            title="Housing Property"
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed minus quis nisi adipisci, officia.'
+            image="https://images.pexels.com/photos/1022936/pexels-photo-1022936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <Project
+            title="Living Complex"
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed minus quis nisi adipisci, officia.'
+            image="https://images.pexels.com/photos/93400/pexels-photo-93400.jpeg?auto=compress&cs=tinysrgb&w=300" />
+          <Project
+            title="Apartment Complex"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed minus quis nisi adipisci, officia."
+            image="https://images.pexels.com/photos/1650904/pexels-photo-1650904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+        </div>
       </section>
     </div>
   )
@@ -44,22 +40,22 @@ const Projects = () => {
 
 const Project = ({ title, description, image }) => {
   const styles = {
-    // make the image darker (brightness), don't add box shadow
-    backgroundImage: `url(${image})`,
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(${image})`,
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   }
-  
+
   return (
-    <div style={styles} className='h-[400px] w-80'>
-      <h1>{title}</h1>
+    <div style={styles} className={`project transition-all h-[400px] w-[90%]
+    tablet:w-[40%] laptop:w-[25%] group flex flex-col justify-end pb-8 px-4 gap-4 rounded-sm hover:justify-start`}>
+      <h1 className='transition-all text-neutral-100 font-semibold text-3xl group-hover:my-3 group-hover:mt-5'>{title}</h1>
 
-      <p>{description}</p>
+      <p className='transition-all font-noto-sans text-neutral-150 hidden group-hover:block'>{description}</p>
 
-      <Link>
+      <Link className='flex items-center gap-1 transition-all text-yellow-300 font-noto-sans group-hover:mt-auto'>
         <span>Read more</span>
-        <span>{'>'}</span>
+        <span className='material-symbols-outlined'>chevron_right</span>
       </Link>
     </div>
   )
