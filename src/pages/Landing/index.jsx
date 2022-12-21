@@ -4,6 +4,7 @@ import AboutUs from './AboutUs';
 import Services from './Services';
 import Achievements from './Achievements';
 import Projects from './Projects';
+import Testimonials from './Testimonials';
 import '../../assets/landing.scss';
 
 const Landing = () => {
@@ -12,8 +13,9 @@ const Landing = () => {
       <Hero />
       <AboutUs />
       <Services />
-      <Achievements />
       <Projects />
+      <Achievements />
+      <Testimonials />
     </main>
   )
 }
