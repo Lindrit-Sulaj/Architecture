@@ -2,8 +2,8 @@ import React from 'react'
 const Testimonials = () => {
   return (
     <div className='bg-blue-800'>
-      <section className="testimonials max-w-mw-normal mx-auto py-12 px-4 laptop:px-0">
-        <div className='mb-8'>
+      <section className="testimonials max-w-mw-normal mx-auto py-20 px-4 laptop:px-0">
+        <div className='mb-16'>
           <p className='text-center text-yellow-500 uppercase font-inter-tight tracking-wider font-bold'>Testimonials</p>
           <h1 className='text-4xl font-playfair text-center text-neutral-100 mt-4'>Don't just take our word for it...</h1>
         </div>
@@ -36,7 +36,7 @@ const Testimonials = () => {
 
 const Testimonial = ({ profile, text, name, profession }) => {
   return (
-    <div className='w-full bg-blue-750 border-solid border-[1px] border-blue-700 rounded-md px-6 py-8 tablet:w-[49%] laptop:w-[24%]'>
+    <div className='w-full bg-blue-800 border-solid border-[1px] border-blue-700 rounded-md px-6 py-8 tablet:w-[49%] laptop:w-[24%]'>
       <span className='material-symbols-outlined text-blue-300 text-5xl text-center flex justify-center tablet:justify-start'>format_quote</span>
       <p className='text-lg text-center mb-8 mt-5 text-neutral-150 font-noto-sans tablet:text-left'>{text}</p>
       <div className='flex justify-center gap-6 tablet:justify-start'>
