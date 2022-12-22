@@ -30,7 +30,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      <img className='w-full tablet:w-1/2 rounded-md laptop:h-[550px] object-cover' src="https://cdn.tlcinteriors.com.au/wp-content/uploads/2018/05/white-living-room-with-green-accents-botanical-interior-design-desenio-art.jpg" alt="White living room with green accents botanical interior design" />
+      <img className='w-full mt-[40px] tablet:w-1/2 rounded-md laptop:h-[550px] object-cover' src="https://cdn.tlcinteriors.com.au/wp-content/uploads/2018/05/white-living-room-with-green-accents-botanical-interior-design-desenio-art.jpg" alt="White living room with green accents botanical interior design" />
     </section>
   )
 }

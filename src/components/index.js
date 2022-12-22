@@ -5,6 +5,7 @@ import Button from "./Button";
 import Dropdown from "./Dropdown";
 import InformationBox from "./InformationBox";
 import Tabs from "./Tabs";
+import BlogCard from "./BlogCard";
 
 export {
   Missing,
@@ -13,5 +14,6 @@ export {
   Button,
   Dropdown,
   InformationBox,
-  Tabs
+  Tabs,
+  BlogCard
 }
