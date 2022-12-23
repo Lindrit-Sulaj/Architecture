@@ -7,6 +7,7 @@ import Projects from './Projects';
 import Testimonials from './Testimonials';
 import Experience from './Experience';
 import Blog from './Blog';
+import Contact from './Contact';
 import '../../assets/landing.scss';
 
 const Landing = () => {
@@ -20,6 +21,7 @@ const Landing = () => {
       <Testimonials />
       <Experience />
       <Blog />
+      <Contact />
     </main>
   )
 }
