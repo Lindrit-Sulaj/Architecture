@@ -12,7 +12,7 @@ const Achievements = () => {
           <p className='text-left text-yellow-900 font-inter-tight uppercase font-bold tablet:text-center laptop:text-left'>Achievements</p>
           <h1 className='text-left text-4xl font-playfair font-bold mt-2 mb-8 tablet:text-center tablet:max-w-[700px] tablet:mx-auto laptop:text-left laptop:mx-0 laptop:text-[40px]'>We are passionate and we know our costumers needs</h1>
           <p className='text-left mt-2 text-neutral-400 text-lg max-w-[580px] tablet:text-center tablet:mx-auto laptop:mx-0 laptop:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui impedit blanditiis exercitationem modi illum assumenda eum ea esse saep.</p>
-          <div className='flex flex-wrap tablet:flex-nowrap items-stretch justify-start tablet:justify-center my-10 laptop:justify-start'>
+          <div className='flex flex-wrap tablet:flex-nowrap items-stretch justify-start tablet:justify-center my-10 gap-y-10 laptop:justify-start'>
             <InformationBox
               iconName='sticky_note_2'
               title='320'
