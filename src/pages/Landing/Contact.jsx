@@ -33,7 +33,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form action="" className='w-full tablet:w-[40%] flex flex-col gap-y-8 py-7 px-5 bg-blue-750 border-solid border-[1px] border-blue-700 rounded-xl laptop:px-8'>
+        <form action="" className='w-full tablet:w-[40%] flex flex-col gap-y-8 py-7 px-5 bg-blue-750 border-solid border-[1px] border-blue-700 rounded-xl laptop:px-8' netlify>
           <div className=''>
             <label htmlFor="name" className='text-blue-300 block w-full mb-2 font-noto-sans'>Name</label>
             <input type="text" id='name' name='name' placeholder='John Doe' className='w-full block border-solid border-[1px] outline-none rounded-md border-blue-700 text-neutral-100 bg-[transparent] font-inter-tight px-4 py-2 focus:border-blue-300 focus:border-[2px] laptop:py-3' required/>
